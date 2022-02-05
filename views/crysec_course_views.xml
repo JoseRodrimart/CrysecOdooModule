@@ -13,7 +13,7 @@
             id="crysec_course_menu"
             name="Courses"
             action="crysec_course_action"
-            parent="crysec_base_menu"/>
+            />
     </menuitem>
 
     <!-- Form (creation and editing form) view -->
@@ -22,10 +22,18 @@
         <field name="model">crysec.course</field>
         <field name="arch" type="xml">
             <form>
-                <field name="name"/>
-                <field name="description"/>
-                <field name="price"/>
-                <field name="image"/>
+                <!-- sheet allows us to distribute fields in groups-->
+                <sheet>
+                    <!-- groups have some capabilities which make forms more user-friendly -->
+                    <group name="group_top">
+                        <field name="name"/>
+                        <field name="state"/>
+                        <field name="description"/>
+                        <field name="price"/>
+                        <field name="image"/>
+                        <field name="start_date"/>
+                    </group>
+                </sheet>
             </form>            
         </field>
     </record>
