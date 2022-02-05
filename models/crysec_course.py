@@ -13,14 +13,14 @@ class Crysec_Course(models.Model):
     ])
 
     # With this field, odoo knows the current currency (Dollars, Euros, etc.)
-    currency_id = fields.Many2one('res.currency', string='Currency') 
+    currency_id = fields.Many2one('res.currency', help='Currency') 
 
     name = fields.Char('Name', required=True, help='Course name')
     description = fields.Char('Description', required=True, help='Course description')
     image = fields.Image('Image', max_width=600, max_height=600, help='Associated image')
-    price = fields.Currency('Price', help='Price of the whole course')
-    #teachers_id = fields.Many2one('res.partner', string='Teachers')
-    start_date = fields.Date('Start Date', string="The day the course will start")
+    price = fields.Monetary('Price', help='Price of the whole course')
+    teachers_id = fields.Many2one('res.partner', help='Teachers')
+    start_date = fields.Date('Start Date', help="The day the course will start")
 
 
 
