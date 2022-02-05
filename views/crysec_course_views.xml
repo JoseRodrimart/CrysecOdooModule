@@ -19,7 +19,7 @@
     <!-- Form (creation and editing form) view -->
     <record id="crysec_course_view_form" model="ir.ui.view">
         <field name="name">Crysec Course Form</field>
-        <field name="model">crysec.course<field/>
+        <field name="model">crysec.course</field>
         <field name="arch" type="xml">
             <form>
                 <field name="name"/>
@@ -29,6 +29,8 @@
             </form>            
         </field>
     </record>
+
+    <!-- Tree main view -->
     <record id="crysec_course_view_tree" model="ir.ui.view">
         <field name="name">Crysec Course List</field>
         <field name="model">crysec.course</field>

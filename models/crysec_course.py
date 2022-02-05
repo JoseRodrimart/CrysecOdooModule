@@ -6,4 +6,4 @@ class Crysec_Course(models.Model):
     name = fields.Char('Name', required=True, help='Course name')
     description = fields.Char('Description', required=True, help='Course description')
     image = fields.Image('Image', max_width=600, max_height=600)
-    price = fields.float('Price')
+    price = fields.Float('Price')

@@ -9,8 +9,8 @@
     'website': 'https://iespacomolla.es/',
     'css': ['static/src/css/crm.css'],
     'data':[
-        'security/ir.model.access.csv',
         'security/groups.xml',
+        'security/ir.model.access.csv',
         'views/crysec_course_views.xml'
         ],
     'installable': True,
