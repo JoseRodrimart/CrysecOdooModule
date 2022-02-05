@@ -22,6 +22,9 @@
         <field name="model">crysec.course</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <field name="stage_id" widget="statusbar" options="{'clickable': '1', 'fold_field':'fold'}"/>
+                </header>
                 <!-- sheet allows us to distribute fields in groups-->
                 <sheet>
                     <!-- groups have some capabilities which make forms more user-friendly -->

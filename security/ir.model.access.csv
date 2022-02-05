@@ -1,3 +1,5 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_crysec_course_global,access_crysec_course_global,model_crysec_course,,1,0,0,0
 access_crysec_course_teachers,access_crysec_course_teachers,model_crysec_course,group_teacher,1,1,1,1
+acces_crysec_course_stage_global,acces_crysec_course_stage_global,model_crysec_course_stage,,1,0,0,0
+acces_crysec_course_stage_teachers,acces_crysec_course_stage_teachers,model_crysec_course_stage,group_teacher,1,1,1,1
