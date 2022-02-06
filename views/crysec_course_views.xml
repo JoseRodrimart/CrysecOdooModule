@@ -41,19 +41,22 @@
         </field>
     </record>
 
+    <!-- Kanban view -->
     <record id="crysec_course_view_kanban" model="ir.ui.view">
         <field name="name">crysec course kanban</field>
         <field name="model">crysec.course</field>
         <field name="arch" type="xml">
-            <kanban default_group_by="state">
+            <kanban 
+            default_group_by="stage_id" 
+            group_create="false"
+            >
                 <field name="name"/>
                 <field name="price"/>
-                <field name="state"/>
                 <!-- missing total of seats / occupied-->
                 <templates>
                     <t t-name="kanban-box">
                         <div class="oe_kanban_card oe_kanban_global_click">
-                            <field name="image" nolabel="1" widget="image" class="oe_right oe_avatar"/>
+                            <!--field name="image" nolabel="1" widget="image" class="oe_right oe_avatar"/-->
                             <field name="name" />
                             <field name="price" />
                         </div>

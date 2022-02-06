@@ -4,26 +4,26 @@
     <record id="stage_preparation" model="crysec.course.stage">
         <field name="name">In preparation</field>
         <field name="sequence">1</field>
-        <field name="book_state">inPreparation</field>
+        <field name="course_stage">inPreparation</field>
     </record>
     <record id="stage_available" model="crysec.course.stage">
         <field name="name">Available to buy</field>
         <field name="sequence">5</field>
-        <field name="book_state">openReservations</field>
+        <field name="course_stage">openReservations</field>
     </record>
     <record id="stage_started" model="crysec.course.stage">
         <field name="name">Started</field>
         <field name="sequence">15</field>
-        <field name="book_state">started</field>
+        <field name="course_stage">started</field>
     </record>
     <record id="stage_completed" model="crysec.course.stage">
         <field name="name">Completed</field>
         <field name="sequence">25</field>
-        <field name="book_state">completed</field>
+        <field name="course_stage">completed</field>
     </record>
     <record id="stage_cancelled" model="crysec.course.stage">
         <field name="name">Cancelled</field>
         <field name="sequence">35</field>
-        <field name="book_state">cancelled</field>
+        <field name="course_stage">cancelled</field>
     </record>   
 </odoo>
