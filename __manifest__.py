@@ -9,13 +9,14 @@
     'website': 'https://iespacomolla.es/',
     'css': ['static/src/css/crm.css'],
     'data':[
-        'data/library_stage.xml',
+        'data/course_stage.xml',
         'security/groups.xml',
         'security/ir.model.access.csv',
-        'views/crysec_course_views.xml'
+        'views/crysec_course_views.xml',
+        'views/res_user_inherited_view.xml'
         ],
     'installable': True,
     'application': True,
     'license': 'LGPL-3',
-    'auto_install': False
+    'auto_install': False,
 }

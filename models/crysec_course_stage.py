@@ -1,6 +1,6 @@
 from odoo import fields, models
 
-class LibraryRentStage(models.Model):
+class CrysecStage(models.Model):
     _name = 'crysec.course.stage'
     _order = 'sequence,name'
 
